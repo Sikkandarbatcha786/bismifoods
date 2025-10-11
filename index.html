@@ -146,66 +146,95 @@
     <!-- Product Start --> <div class="container-xxl py-5"> <div class="container"> <div class="row g-0 gx-5 align-items-end"> <div class="col-lg-6"> <div class="section-header text-start mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;"> <h1 class="display-5 mb-3">Our Products</h1> <p>Bringing the Taste of Tradition to Your Kitchen</p> <h3>HOT SELLERS</h3> </div> </div>
    <div class="row g-4 justify-content-center">
 
-         
-  <div class="col-md-4">
-    <div class="product-item bg-white shadow-sm text-center p-4">
-      <img class="img-fluid w-100 mb-3" src="img/new.jpg" alt="">
-      <h5>Bismi Diwali Combo Pack</h5>
-      <p class="text-success fw-bold">Rs.200.00</p>
-      <a class="text-body" href="product.html">
-        <i class="fa fa-eye text-success me-2"></i> View detail
-      </a>
-    </div>
-  </div>
+    <!-- Inline CSS styles -->
+    <style>
+      .ribbon {
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        background-color: red;
+        color: white;
+        padding: 6px 14px;
+        font-size: 14px;
+        font-weight: bold;
+        transform: rotate(-15deg);
+        z-index: 10;
+        border-radius: 4px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
 
-  <div class="col-md-4">
-    <div class="product-item bg-white shadow-sm text-center p-4">
-      <img class="img-fluid w-100 mb-3" src="img/product-1.jpg" alt="">
-      <h5>Bismi Biriyani Masala Paste</h5>
-      <p class="text-success fw-bold">Rs.65.00</p>
-      <a class="text-body" href="product.html">
-        <i class="fa fa-eye text-success me-2"></i> View detail
-      </a>
-    </div>
-  </div>
+      .diwali-highlight {
+        border: 2px solid #ff9900;
+        box-shadow: 0 0 15px rgba(255, 153, 0, 0.4);
+        background-color: #fffbe6;
+        transition: transform 0.3s ease;
+      }
 
-  <div class="col-md-4">
-    <div class="product-item bg-white shadow-sm text-center p-4">
-      <img class="img-fluid w-100 mb-3" src="img/product-2.jpg" alt="">
-      <h5>Bismi Chukka Varuval Paste</h5>
-      <p class="text-success fw-bold">Rs.60.00 </p>
-      <a class="text-body" href="product.html">
-        <i class="fa fa-eye text-success me-2"></i> View detail
-      </a>
-    </div>
-  </div>
+      .diwali-highlight:hover {
+        transform: scale(1.03);
+      }
+    </style>
 
-  <div class="col-md-4">
-    <div class="product-item bg-white shadow-sm text-center p-4">
-      <img class="img-fluid w-100 mb-3" src="img/product-3.jpg" alt="">
-      <h5>Bismi Fried Chicken Masala Mix</h5>
-      <p class="text-success fw-bold">Rs.85.00 </p>
-      <a class="text-body" href="product.html">
-        <i class="fa fa-eye text-success me-2"></i> View detail
-      </a>
-    </div>
-  </div>
-
-</div> <!-- End of row -->
-
-
-
-                        <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="product.html">Browse More</a>
-                        </div>
-                            </div>
-                        </div>
-                     </div>
-                </div>
-            </div>
+    <!-- Row 1: Diwali Pack -->
+    <div class="row g-4 justify-content-center mb-5">
+      <div class="col-md-6">
+        <div class="product-item bg-white shadow-lg text-center p-4 position-relative diwali-highlight">
+          <div class="ribbon">Only few left! Hurry up!</div>
+          <img class="img-fluid w-100 mb-3" src="img/new.jpg" alt="">
+          <h5 class="text-danger fw-bold">🎉 Bismi Diwali Combo Pack</h5>
+          <p class="text-success fw-bold">Rs.200.00</p>
+          <a class="text-body" href="product.html">
+            <i class="fa fa-eye text-success me-2"></i> View detail
+          </a>
         </div>
+      </div>
     </div>
-    <!-- Product End -->
+
+    <!-- Row 2: Regular Products -->
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-4">
+        <div class="product-item bg-white shadow-sm text-center p-4">
+          <img class="img-fluid w-100 mb-3" src="img/product-1.jpg" alt="">
+          <h5>Bismi Biriyani Masala Paste</h5>
+          <p class="text-success fw-bold">Rs.65.00</p>
+          <a class="text-body" href="product.html">
+            <i class="fa fa-eye text-success me-2"></i> View detail
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="product-item bg-white shadow-sm text-center p-4">
+          <img class="img-fluid w-100 mb-3" src="img/product-2.jpg" alt="">
+          <h5>Bismi Chukka Varuval Paste</h5>
+          <p class="text-success fw-bold">Rs.60.00 </p>
+          <a class="text-body" href="product.html">
+            <i class="fa fa-eye text-success me-2"></i> View detail
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="product-item bg-white shadow-sm text-center p-4">
+          <img class="img-fluid w-100 mb-3" src="img/product-3.jpg" alt="">
+          <h5>Bismi Fried Chicken Masala Mix</h5>
+          <p class="text-success fw-bold">Rs.85.00 </p>
+          <a class="text-body" href="product.html">
+            <i class="fa fa-eye text-success me-2"></i> View detail
+          </a>
+        </div>
+      </div>
+
+    </div> <!-- End of regular products row -->
+
+    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+      <a class="btn btn-primary rounded-pill py-3 px-5" href="product.html">Browse More</a>
+    </div>
+
+  </div>
+</div>
+<!-- Product End -->
 
 
     <!-- Firm Visit Start -->
@@ -472,6 +501,7 @@
 
 
 </html>
+
 
 
 
