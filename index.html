@@ -257,9 +257,23 @@
     </div>
     <!-- Firm Visit End -->
 
-<!-- Google Reviews Start --> <div class="container-fluid bg-light bg-icon py-6 mb-5"> <div class="container"> <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;"> <h1 class="display-5 mb-3">Customer Reviews</h1> <p>See what our happy customers are saying about Bismi Food Products.</p> </div> <!-- Elfsight Google Reviews Widget --> <div class="wow fadeInUp text-center" data-wow-delay="0.2s"> <script src="https://static.elfsight.com/platform/platform.js" async></script> <div class="elfsight-app-637e0012-562c-44dd-84c0-1611137e3772" data-elfsight-app-lazy></div> </div> </div> </div> <!-- Google Reviews End -->
 
-    
+       <!-- Google Reviews Start -->
+<div class="container-fluid bg-light bg-icon py-6 mb-5">
+    <div class="container">
+        <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-5 mb-3">Customer Reviews</h1>
+        </div>
+
+        <!-- Elfsight Google Reviews Widget -->
+        <div class="wow fadeInUp text-center" data-wow-delay="0.2s">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-637e0012-562c-44dd-84c0-1611137e3772" data-elfsight-app-lazy></div>
+        </div>
+    </div>
+</div>
+<!-- Google Reviews End -->
+
 
 
     <!-- Blog Start -->
@@ -340,7 +354,7 @@
                 <div class="col-lg-3 col-md-6 d-flex flex-column">
   <h4 class="text-light mb-4">Location</h4>
   <div style="flex-grow:1; width:100%; min-height:250px;">
-    <iframe 
+     <iframe 
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.35898018873!2d78.10488597450747!3d9.90402987467984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf8657242ee7%3A0x6258b45f982cffa8!2sBismi%20Food%20Products!5e0!3m2!1sen!2sin!4v1753526163591!5m2!1sen!2sin"
       width="100%"
       height="100%"
@@ -385,107 +399,13 @@
 
     <!-- Template Javascript -->
     <script src="./js/main.js"></script>
-    <!-- 🎆 தீபாவளி சலுகை Popup Banner -->
-<div id="offerPopup" style="
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  flex-direction: column;
-  padding: 10px;
-  box-sizing: border-box;
-">
-  <div style="position: relative; text-align: center; width: 100%; max-width: 800px;">
-    <!-- Banner Image -->
-    <img src="img/new.jpg" 
-         alt="Diwali Offer - Hurry Up!" 
-         style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 0 20px #ff9900;">
 
-    <!-- Close Button -->
-    <button onclick="closeOfferPopup()" style="
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: #ff6600;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      font-size: 20px;
-      cursor: pointer;
-      z-index: 20;
-      box-shadow: 0 0 10px #ff6600;
-    ">✖</button>
-  </div>
-
-  <!-- 🎉 Tamil Message with Glow & Bounce -->
-  <p style="
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
-    padding: 0 10px;
-    font-size: 22px;
-    color: #fff; /* fallback */
-    background: linear-gradient(90deg, #ffcc00, #ff6600);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: glowPulse 1.5s infinite alternate, bounceText 2s infinite;
-    z-index: 10;
-    position: relative;
-  ">
-    🎉 வாடிக்கையாளர் கோரிக்கைக்கு இணங்க, தீபாவளி சலுகை <strong>அக்டோபர் 15</strong> வரை நீட்டிக்கப்பட்டுள்ளது! 🛍️
-  </p>
-</div>
-
-<!-- Styles -->
-<style>
-  /* Glow Animation */
-  @keyframes glowPulse {
-    0% { text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 20px #ff6600, 0 0 30px #ff6600; }
-    50% { text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ff6600, 0 0 40px #ff6600; }
-    100% { text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 20px #ff6600, 0 0 30px #ff6600; }
-  }
-
-  /* Bounce Animation */
-  @keyframes bounceText {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
-
-  /* Responsive Adjustments */
-  @media (min-width: 768px) {
-    #offerPopup img { max-width: 70%; }
-    #offerPopup p { font-size: 28px; }
-    #offerPopup button { width: 45px; height: 45px; font-size: 22px; }
-  }
-
-  @media (max-width: 767px) {
-    #offerPopup img { max-width: 90%; }
-    #offerPopup p { font-size: 22px; }
-    #offerPopup button { width: 35px; height: 35px; font-size: 18px; }
-  }
-</style>
-
-<script>
-  function closeOfferPopup() {
-    document.getElementById('offerPopup').style.display = 'none';
-  }
-</script>
-
-<!-- Place this script at the end of your page, before </body> -->
-<script defer async src="https://cdn.trustindex.io/loader.js?eb76aa0559179324b2566a95014"></script>
 
 </body>
 
 
 </html>
+
 
 
 
