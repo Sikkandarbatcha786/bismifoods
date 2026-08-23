@@ -436,3 +436,30 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+/* Blog Cards */
+.blog-item {
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.blog-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.blog-item a {
+    color: #2c2c2c;
+    text-decoration: none;
+}
+
+.blog-item a:hover {
+    color: #7a1f1f;
+}
