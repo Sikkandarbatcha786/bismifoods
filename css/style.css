@@ -179,7 +179,7 @@
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -235,7 +235,6 @@
 }
 
 
-
 /*** About ***/
 .about-img img {
     position: relative;
@@ -285,62 +284,66 @@
 .product-item small a:hover {
     color: var(--primary) !important;
 }
-/* Cart page styles */
-    .checkout-wrapper {
-      background: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 45px rgba(0, 0, 0, .07);
-      max-width: 600px;
-      margin: 60px auto;
-    }
 
-    .checkout-title {
-      color: var(--dark);
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 30px;
-    }
 
-    .form-control {
-      border-radius: 5px;
-      padding: 12px;
-      margin-bottom: 15px;
-    }
+/*** Cart page styles ***/
+.checkout-wrapper {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    max-width: 600px;
+    margin: 60px auto;
+}
 
-    .btn-whatsapp {
-      background-color: #25D366;
-      color: white;
-      border: none;
-      width: 100%;
-      padding: 12px;
-      font-weight: bold;
-      transition: 0.3s;
-      border-radius: 5px;
-    }
+.checkout-title {
+    color: var(--dark);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-    .btn-whatsapp:hover {
-      background-color: #1ebc57;
-    }
+.form-control {
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
 
-    .total {
-      text-align: right;
-      font-weight: 600;
-      font-size: 18px;
-      margin-top: 10px;
-    }
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 5px;
+}
 
-    table {
-      width: 100%;
-      margin-bottom: 20px;
-    }
+.btn-whatsapp:hover {
+    background-color: #1ebc57;
+}
 
-    th, td {
-      padding: 10px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
- 
+.total {
+    text-align: right;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item img {
     width: 60px;
@@ -436,30 +439,20 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
-/* Blog Cards */
+
+
+/*** Blog Cards ***/
+
+/* Keeps all blog cards at equal height */
 .blog-item {
     height: 100%;
     overflow: hidden;
-    transition: all 0.3s ease;
 }
 
+/* Automatically fits/crops images into the same size */
 .blog-item img {
     width: 100%;
     height: 240px;
     object-fit: cover;
     display: block;
-}
-
-.blog-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-.blog-item a {
-    color: #2c2c2c;
-    text-decoration: none;
-}
-
-.blog-item a:hover {
-    color: #7a1f1f;
 }
